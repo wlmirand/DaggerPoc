@@ -6,7 +6,7 @@ import dagger.Module;
 import dagger.android.ContributesAndroidInjector;
 
 /**
- * Here we declare all Fragments we will use
+ * Here we declare all Fragments that will be created by Dagger
  * Might not be needed once we use Navigation Arch component
  */
 @Module
