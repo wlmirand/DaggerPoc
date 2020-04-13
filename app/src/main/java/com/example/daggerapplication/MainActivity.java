@@ -5,6 +5,9 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.daggerapplication.dagger.AppComponent;
+import com.example.daggerapplication.dagger.AppModule;
+import com.example.daggerapplication.dagger.DaggerAppComponent;
 import com.example.daggerapplication.vm.ViewModelFactory;
 
 import javax.inject.Inject;

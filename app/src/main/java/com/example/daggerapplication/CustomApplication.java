@@ -3,6 +3,7 @@ package com.example.daggerapplication;
 import android.app.Application;
 
 import com.example.daggerapplication.dagger.AppComponent;
+import com.example.daggerapplication.dagger.AppModule;
 import com.example.daggerapplication.dagger.DaggerAppComponent;
 
 public class CustomApplication extends Application {
@@ -13,7 +14,8 @@ public class CustomApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
-        // Reference to the application graph that is used across the whole app
-        appComponent = DaggerAppComponent.create();
+        appComponent = DaggerAppComponent.builder()
+                .appModule(new AppModule(this))
+                .build();
     }
 }
