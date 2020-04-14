@@ -17,7 +17,6 @@ public class CustomApplication extends DaggerApplication {
                 .application(this)
                 .build();
 
-        component.inject(this);
         return component;
     }
 }

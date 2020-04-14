@@ -33,8 +33,6 @@ import dagger.android.support.AndroidSupportInjectionModule;
 )
 public interface ApplicationComponent extends AndroidInjector<DaggerApplication> {
 
-    void inject(CustomApplication application);
-
     @Component.Builder
     interface Builder {
         @BindsInstance

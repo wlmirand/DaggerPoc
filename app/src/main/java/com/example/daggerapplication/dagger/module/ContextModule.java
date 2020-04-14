@@ -12,6 +12,9 @@ import dagger.Module;
 @Module
 public abstract class ContextModule {
 
+    /**
+     * Return the Application Context from the Application object
+     */
     @Binds
     abstract Context provideContext(Application application);
 }
